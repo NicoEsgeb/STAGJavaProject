@@ -6,14 +6,14 @@
             <keyphrase>unlock</keyphrase>
         </triggers>
         <subjects>
-            <entity>trapdoor</entity>
-            <entity>key</entity>
+            <entityCategory>trapdoor</entityCategory>
+            <entityCategory>key</entityCategory>
         </subjects>
         <consumed>
-            <entity>key</entity>
+            <entityCategory>key</entityCategory>
         </consumed>
         <produced>
-            <entity>cellar</entity>
+            <entityCategory>cellar</entityCategory>
         </produced>
         <narration>You unlock the trapdoor and see steps leading down into a cellar</narration>
     </action>
@@ -25,14 +25,14 @@
             <keyphrase>cutdown</keyphrase>
         </triggers>
         <subjects>
-            <entity>tree</entity>
-            <entity>axe</entity>
+            <entityCategory>tree</entityCategory>
+            <entityCategory>axe</entityCategory>
         </subjects>
         <consumed>
-            <entity>tree</entity>
+            <entityCategory>tree</entityCategory>
         </consumed>
         <produced>
-            <entity>log</entity>
+            <entityCategory>log</entityCategory>
         </produced>
         <narration>You cut down the tree with the axe</narration>
     </action>

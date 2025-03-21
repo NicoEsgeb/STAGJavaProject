@@ -6,14 +6,14 @@
             <keyphrase>unlock</keyphrase>
         </triggers>
         <subjects>
-            <entity>trapdoor</entity>
-            <entity>key</entity>
+            <entityCategory>trapdoor</entityCategory>
+            <entityCategory>key</entityCategory>
         </subjects>
         <consumed>
-            <entity>key</entity>
+            <entityCategory>key</entityCategory>
         </consumed>
         <produced>
-            <entity>cellar</entity>
+            <entityCategory>cellar</entityCategory>
         </produced>
         <narration>You unlock the door and see steps leading down into a cellar</narration>
     </action>
@@ -25,14 +25,14 @@
             <keyphrase>cut down</keyphrase>
         </triggers>
         <subjects>
-            <entity>tree</entity>
-            <entity>axe</entity>
+            <entityCategory>tree</entityCategory>
+            <entityCategory>axe</entityCategory>
         </subjects>
         <consumed>
-            <entity>tree</entity>
+            <entityCategory>tree</entityCategory>
         </consumed>
         <produced>
-            <entity>log</entity>
+            <entityCategory>log</entityCategory>
         </produced>
         <narration>You cut down the tree with the axe</narration>
     </action>
@@ -42,13 +42,13 @@
             <keyphrase>drink</keyphrase>
         </triggers>
         <subjects>
-            <entity>potion</entity>
+            <entityCategory>potion</entityCategory>
         </subjects>
         <consumed>
-            <entity>potion</entity>
+            <entityCategory>potion</entityCategory>
         </consumed>
         <produced>
-            <entity>health</entity>
+            <entityCategory>health</entityCategory>
         </produced>
         <narration>You drink the potion and your health improves</narration>
     </action>
@@ -60,10 +60,10 @@
             <keyphrase>attack</keyphrase>
         </triggers>
         <subjects>
-            <entity>elf</entity>
+            <entityCategory>elf</entityCategory>
         </subjects>
         <consumed>
-            <entity>health</entity>
+            <entityCategory>health</entityCategory>
         </consumed>
         <produced>
         </produced>
@@ -75,14 +75,14 @@
             <keyphrase>pay</keyphrase>
         </triggers>
         <subjects>
-            <entity>elf</entity>
-            <entity>coin</entity>
+            <entityCategory>elf</entityCategory>
+            <entityCategory>coin</entityCategory>
         </subjects>
         <consumed>
-            <entity>coin</entity>
+            <entityCategory>coin</entityCategory>
         </consumed>
         <produced>
-            <entity>shovel</entity>
+            <entityCategory>shovel</entityCategory>
         </produced>
         <narration>You pay the elf your silver coin and he produces a shovel</narration>
     </action>
@@ -92,14 +92,14 @@
             <keyphrase>bridge</keyphrase>
         </triggers>
         <subjects>
-            <entity>log</entity>
-            <entity>river</entity>
+            <entityCategory>log</entityCategory>
+            <entityCategory>river</entityCategory>
         </subjects>
         <consumed>
-            <entity>log</entity>
+            <entityCategory>log</entityCategory>
         </consumed>
         <produced>
-            <entity>clearing</entity>
+            <entityCategory>clearing</entityCategory>
         </produced>
         <narration>You bridge the river with the log and can now reach the other side</narration>
     </action>
@@ -109,15 +109,15 @@
             <keyphrase>dig</keyphrase>
         </triggers>
         <subjects>
-            <entity>ground</entity>
-            <entity>shovel</entity>
+            <entityCategory>ground</entityCategory>
+            <entityCategory>shovel</entityCategory>
         </subjects>
         <consumed>
-            <entity>ground</entity>
+            <entityCategory>ground</entityCategory>
         </consumed>
         <produced>
-            <entity>hole</entity>
-            <entity>gold</entity>
+            <entityCategory>hole</entityCategory>
+            <entityCategory>gold</entityCategory>
         </produced>
         <narration>You dig into the soft ground and unearth a pot of gold !!!</narration>
     </action>
@@ -127,12 +127,12 @@
             <keyphrase>blow</keyphrase>
         </triggers>
         <subjects>
-            <entity>horn</entity>
+            <entityCategory>horn</entityCategory>
         </subjects>
         <consumed>
         </consumed>
         <produced>
-            <entity>lumberjack</entity>
+            <entityCategory>lumberjack</entityCategory>
         </produced>
         <narration>You blow the horn and as if by magic, a lumberjack appears !</narration>
     </action>

@@ -9,10 +9,14 @@ import java.io.OutputStreamWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.file.Paths;
+import java.util.HashSet;
 
 public final class GameServer {
 
     private static final char END_OF_TRANSMISSION = 4;
+
+    //--note: HashSet of Unique Locations ---------------------
+    public HashSet<String> locations;
 
     public static void main(String[] args) throws IOException {
         File entitiesFile = Paths.get("config" + File.separator + "basic-entities.dot").toAbsolutePath().toFile();
@@ -30,6 +34,21 @@ public final class GameServer {
     */
     public GameServer(File entitiesFile, File actionsFile) {
         // TODO implement your server logic here
+
+
+        //--note: Running parser -----------------
+        DigitalGraph digitalGraph = DotParser.parseFile(entitiesFile);
+        digitalGraph.printGraph();
+
+        //--note: Creating and running XmlParser --------
+        File xmlFile = new File("config" + File.separator + "basic-actions.xml");
+        XmlParser xmlParser = new XmlParser();
+        DigitalActions digitalActions = xmlParser.perform(xmlFile);
+
+        if(digitalActions != null){
+            System.out.println(digitalActions.toString());
+        }
+
     }
 
     /**
